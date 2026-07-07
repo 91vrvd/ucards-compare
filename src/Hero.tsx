@@ -20,7 +20,7 @@ export default function Hero({ meta, summary }: HeroProps) {
       <div className="relative max-w-7xl mx-auto px-4 pt-16 pb-12 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 text-gold text-sm mb-6">
           <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-          数据更新至 {date} · 含大陆 KYC 实测数据
+          数据更新至 {date} · 含大陆 KYC 复核记录
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -33,18 +33,18 @@ export default function Hero({ meta, summary }: HeroProps) {
         </p>
         <p className="text-sm text-gray-500 max-w-xl mx-auto">
           覆盖 EtherFi、Plasma、Bitget、Binance、OKX、Gate、Bybit、Crypto.com、RedotPay 等主流 U 卡。
-          重点标注中国大陆用户实际可用性（身份证/护照 KYC、海外地址要求）
+          重点标注中国大陆用户可用性（证件要求、海外地址、地区限制）
         </p>
 
         {/* Quick stats */}
         <div className="flex flex-wrap justify-center gap-6 mt-8">
           <div className="glass-card px-5 py-3">
             <p className="text-xs text-gray-500 mb-1">🟢 大陆可直接用</p>
-            <p className="text-sm font-semibold text-green-cyber">Bitget Wallet Card</p>
+            <p className="text-sm font-semibold text-green-cyber">Bitget Wallet Card（需护照）</p>
           </div>
           <div className="glass-card px-5 py-3">
             <p className="text-xs text-gray-500 mb-1">🟡 需海外地址</p>
-            <p className="text-sm font-semibold text-yellow-400">RedotPay · Plasma · Crypto.com</p>
+            <p className="text-sm font-semibold text-yellow-400">Plasma · Crypto.com</p>
           </div>
           <div className="glass-card px-5 py-3">
             <p className="text-xs text-gray-500 mb-1">🏆 返现最强</p>

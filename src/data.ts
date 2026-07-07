@@ -97,8 +97,12 @@ function feesSummary(card: UCard): string {
     parts.push(`开卡${f.issuance_fee}`);
   }
   if (f.crypto_conversion_fee && f.crypto_conversion_fee !== '未公开' && f.crypto_conversion_fee !== 'N/A') {
-    const cf = f.crypto_conversion_fee.replace('0%', '免费').replace('无', '免费');
-    if (cf !== '免费') parts.push(`转换${cf.replace(/^.*?(\d[\d.]*%).*$/, '$1')}`);
+    const raw = f.crypto_conversion_fee.trim();
+    const isFreeConversion = raw === '0%' || raw === '无' || raw.includes('免费');
+    if (!isFreeConversion) {
+      const percent = raw.match(/\d+(?:\.\d+)?%/)?.[0];
+      parts.push(`转换${percent || raw}`);
+    }
   }
   if (f.fx_fee && f.fx_fee !== '未公开' && f.fx_fee !== 'N/A') {
     parts.push('含汇损');

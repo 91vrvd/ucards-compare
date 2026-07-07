@@ -28,8 +28,8 @@
 - 支持桌面端完整表格和移动端卡片堆叠布局
 
 ### 🇨🇳 中国大陆可用性深度标注
-- **🟢 可直接用**：大陆身份证/护照直接注册，无需海外地址（如 Bitget Wallet Card）
-- **🟡 有条件可用**：需要海外地址证明/护照/邀请码等（如 Plasma One、RedotPay）
+- **🟢 可直接用**：官方明确支持大陆居民，但仍可能有证件门槛（如 Bitget Wallet Card 需中国护照，当前不接受身份证）
+- **🟡 有条件可用**：需要海外地址证明/护照/邀请码等（如 Plasma One、Crypto.com）
 - **🔴 不可用**：明确限制中国大陆用户（如 Binance、OKX、Bybit）
 - 每张卡标注：**支持证件类型**（身份证/护照）、是否需要海外地址、是否需要海外手机号、是否有 IP 限制
 
@@ -125,7 +125,7 @@ ucards-website/
 - Twitter/X 社区讨论
 - 各平台中文教程（知乎、NBVil 等）
 
-⚠️ **注意**：卡片费率、返现、KYC 政策可能随时变化，建议开卡前在平台官方确认最新信息。
+⚠️ **注意**：卡片费率、返现、KYC 政策可能随时变化。中国大陆可用性优先按官方 FAQ/帮助中心判断；社区实测和第三方平台只作辅助参考，开卡前请再次确认官方最新信息。
 
 ---
 
@@ -133,7 +133,7 @@ ucards-website/
 
 ### 数据层面
 1. **时效性风险**：U 卡市场变化极快，返现比例、KYC 政策、支持地区可能已变动。需要定期更新。
-2. **大陆用户实测数据不足**：部分卡（如 Bitget Wallet Card）虽然官方宣称支持 China，但缺少中文社区的批量实测反馈。
+2. **大陆用户实测数据不足**：部分卡（如 Bitget Wallet Card）虽然官方列出大陆居民申请规则，但缺少中文社区的批量实测反馈；且 Bitget Wallet Card 与 Bitget 交易所 Card 口径不同，必须分开看。
 3. **缺少更多小众 U 卡**：KAST、Tuyo、Coinbase One、Revolut 等尚未纳入。
 4. **Fiat 法币入金路线未详细标注**：对于大陆用户，从 CNY 到 U 卡全链路（人民币→USDT→U 卡消费）的磨损未计算。
 5. **缺少用户评价/评分**：目前只有客观数据，没有社区评分或使用体验维度。
@@ -193,11 +193,11 @@ MIT License — 详见 [LICENSE](LICENSE) 文件。
 ## 🙏 致谢
 
 - 灵感来源：[@DRbitcoin36](https://x.com/DRbitcoin36) 的推文
-- 数据研究：由 OpenClaw AI Agent (dolphin) 完成多源交叉验证
+- 数据研究：基于公开资料、官方文档和社区反馈交叉整理
 - 网站构建：基于 Vite + React + Tailwind CSS
 
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for the crypto community · 2026</sub>
+  <sub>Open data for the crypto community · 2026</sub>
 </p>

@@ -15,7 +15,7 @@ export default function Footer({ sources, meta }: FooterProps) {
             本网站不构成任何投资建议或开卡推荐。加密货币投资有风险，操作前请自行评估。
             <br />
             📌 中国大陆可用性数据更新至 {meta?.kyc_updated_at ? new Date(meta.kyc_updated_at).toLocaleDateString('zh-CN') : '2026-07'}，
-            基于官方FAQ、中文社区实测反馈和第三方平台信息交叉验证。
+            优先采用官方 FAQ/帮助中心；社区反馈和第三方平台仅作辅助参考。
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export default function Footer({ sources, meta }: FooterProps) {
             {' · '}KYC 数据更新{' '}
             {meta?.kyc_updated_at ? new Date(meta.kyc_updated_at).toLocaleDateString('zh-CN') : '-'}
             {' · '}
-            <span className="text-gold">Built with ❤️ for the crypto community</span>
+            <span className="text-gold">Open data for the crypto community</span>
           </p>
         </div>
       </div>

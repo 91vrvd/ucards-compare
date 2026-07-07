@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-07-06T03:40:00+08:00",
-    "description": "主流加密货币U卡深度研究数据，多源交叉验证 含中国大陆用户KYC详细数据",
+    "generated_at": "2026-07-07T05:50:00+08:00",
+    "description": "主流加密货币U卡深度研究数据，基于 card.lengziyu.cn 交叉验证 + 多源对比。KYC数据以 card.lengziyu.cn 2026-07-07 抓取为准。",
     "sources": [
+      "https://card.lengziyu.cn - 集卡对比平台 (KYC/评分/费用主数据源, 2026-07-07)",
       "https://defimap.io - Crypto Card Comparison Platform",
       "https://www.cryptocardhub.com - Crypto Card Reviews & Details",
       "https://spendcrypto.net - Crypto Card Comparison",
       "https://nbvil.com - 中文加密货币卡测评",
       "https://www.nodeseek.com - 中文社区U卡讨论",
-      "https://x.com - Twitter/X 社区信息",
-      "https://www.plasma.org - Plasma 官网"
+      "https://x.com - Twitter/X 社区信息"
     ],
-    "disclaimer": "卡片费率、返现比例、地区可用性可能会随时变化，建议在开卡前与平台官方确认最新信息。此数据收集于2026年7月。",
-    "kyc_updated_at": "2026-07-06T04:00:00+08:00"
+    "disclaimer": "卡片费率、返现比例、地区可用性可能会随时变化。本次 KYC 数据修正主要依据 card.lengziyu.cn（2026-07-07 抓取）的交叉验证结果。开卡前请以官方最新信息为准。",
+    "kyc_updated_at": "2026-07-07T05:50:00+08:00"
   },
   "cards": {
     "etherfi_cash_card": {
@@ -61,13 +61,13 @@
         "annual_fee": "Core免费, 高级需积分/质押",
         "monthly_fee": "Core $0",
         "crypto_conversion_fee": "未明确公开",
-        "fx_fee": "EUR/USD交易0%, 其他可能收费",
+        "fx_fee": "1%",
         "atm_fee": "未公开明确费率",
         "inactivity_fee": "未公开",
         "top_up_fee": "免费(加密/银行转账)"
       },
       "chinese_kyc": {
-        "allows_chinese": false,
+        "allows_chinese": "partial",
         "kyc_required": true,
         "supported_documents": "护照、身份证(视地区)",
         "available_regions": [
@@ -118,7 +118,8 @@
         "https://defimap.io/cards/etherfi-cash-card",
         "https://www.cryptocardhub.com/card/ether-fi-cash-card",
         "https://defimap.io/blog/reviews/etherfi-cash-card-review",
-        "https://spendcrypto.net/cards/etherfi-cash-card"
+        "https://spendcrypto.net/cards/etherfi-cash-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": false,
@@ -140,7 +141,7 @@
           "min_deposit": "无最低要求",
           "note": "非托管模式，需要Gnosis Safe钱包"
         },
-        "notes": "⚠️ 不可用。虽然非托管模式和3%返现很不错，但目前仅限美国和香港。EtherFi更面向DeFi原生用户，对中国大陆普通用户不适用。",
+        "notes": "大陆不可用。EtherFi Cash Card 仅支持美国和香港地区。非托管模式和3%返现不错，但对中国大陆普通用户不适用。",
         "sources": [
           "https://defimap.io/cards/etherfi-cash-card",
           "https://www.cryptocardhub.com/card/ether-fi-cash-card",
@@ -158,7 +159,7 @@
         "实体卡(白金卡即将推出)"
       ],
       "cashback": {
-        "rate": "3% 基础消费返现 (XPL代币)",
+        "rate": "最高 4%",
         "special_events": "AI订阅返现活动最高10% (限时)",
         "additional": "不定期的额外返现活动",
         "note": "日常消费默认返现3%"
@@ -168,13 +169,13 @@
         "annual_fee": "免费(基础)",
         "monthly_fee": "免费",
         "crypto_conversion_fee": "无(直接用USDT/USDC消费,不需转为法币)",
-        "fx_fee": "未明确公开",
+        "fx_fee": "最高 1%",
         "atm_fee": "未公开",
         "inactivity_fee": "未公开",
         "top_up_fee": "免费(加密入金)"
       },
       "chinese_kyc": {
-        "allows_chinese": "partial",
+        "allows_chinese": false,
         "kyc_required": true,
         "supported_documents": [
           "中国护照(Passport)",
@@ -219,22 +220,23 @@
         "https://x.com/0x_bigOK/status/1970321233389711659",
         "https://www.nodeseek.com/post-733754-1",
         "https://www.plasma.org/personal",
-        "https://zhuanlan.zhihu.com/p/2038355870388581384"
+        "https://zhuanlan.zhihu.com/p/2038355870388581384",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": "partial",
-        "detail": "可以接受中国护照/身份证进行KYC，但注册时需要海外地址证明（银行账单/水电账单）和海外手机号。大陆地址不能直接注册。必须选择美国等海外地区为居住地。目前处于邀请制内测，需邀请码。",
+        "detail": "公开信息仅明确支持护照 KYC，不支持身份证。注册需要海外地址证明、海外手机号，目前处于邀请制或分阶段开放。",
         "documents": {
-          "id_card": true,
+          "id_card": false,
           "passport": true,
-          "note": "可直接选择 'People's Republic of China' 作为证件签发国，支持身份证和护照"
+          "note": "仅支持护照——公开信息无身份证直接过审的明确信号"
         },
         "requires_overseas_address": true,
-        "address_note": "必须提供海外地址，且需要地址证明（银行账单/水电账单/信用卡账单）；实测SoFi Bank Statement可过审；N26地址已开始失效",
+        "address_note": "必须提供海外地址，且需要地址证明",
         "requires_overseas_phone": true,
-        "phone_note": "必须使用海外手机号（+86号未充分测试，建议用海外号）",
+        "phone_note": "需海外手机号",
         "china_ip_blocked": false,
-        "ip_note": "无大陆IP限制，但需要海外的地址和手机号配合",
+        "ip_note": "无大陆IP限制，但需海外地址+手机号",
         "application_threshold": {
           "staking_required": false,
           "monthly_fee": "免费（基础卡）",
@@ -242,7 +244,7 @@
           "invite_code_required": true,
           "note": "目前内测阶段需要邀请码才能注册；仅iOS设备可用（Android开发中）"
         },
-        "notes": "即使接受中国证件，仍需要海外地址证明+海外手机号。对于没有海外账单的大陆用户来说门槛较高。但KYC审核快（约2分钟）。",
+        "notes": "护照可KYC，但需要海外地址证明+海外手机号。对没有海外账单的大陆用户门槛较高。目前邀请制内测。建议优先考虑Bitget Wallet Card。",
         "sources": [
           "https://nbvil.com/finance/plasma/",
           "https://www.plasma.org/personal",
@@ -268,7 +270,7 @@
         "annual_fee": "$0",
         "monthly_fee": "$0",
         "crypto_conversion_fee": "月免费配额内0，超出后标准费率",
-        "fx_fee": "月免费配额内0；超出后通常1%-2.2%",
+        "fx_fee": "0% 月免费配额内；超出 3%",
         "atm_fee": "虚拟卡暂不支持ATM",
         "inactivity_fee": "未公开",
         "top_up_fee": "免费(加密入金)"
@@ -278,13 +280,13 @@
         "kyc_required": true,
         "supported_documents": "护照(视地区)",
         "available_regions": [
-          "EEA(欧洲经济区)",
-          "英国",
-          "LATAM(拉美)",
-          "APAC(亚太)"
+          "Mainland China（Bitget Wallet Card）",
+          "APAC / Europe / LATAM（不同发卡项目规则不同）"
         ],
-        "restricted_regions": [],
-        "note": "APAC地区覆盖，中国大陆用户可能有区域限制"
+        "restricted_regions": [
+          "Bitget 交易所 Card 官方帮助页将 Mainland China 列为受限；Bitget Wallet Card 帮助页则列出大陆居民专属申请规则"
+        ],
+        "note": "需区分 Bitget Wallet Card 与 Bitget 交易所 Card。大陆用户口径以 Bitget Wallet Card 官方帮助页为准：大陆居民可申请，但需要中国护照，不接受身份证。"
       },
       "benefits": {
         "lounge_access": "未提及",
@@ -292,15 +294,15 @@
         "subscription_rebates": "未提及",
         "referral_bonus": "未提及",
         "mobile_wallets": [
-          "Apple Pay",
           "Google Pay",
           "Alipay",
           "WeChat Pay"
-        ]
+        ],
+        "apple_pay_note": "APAC地区暂不支持 Apple Pay"
       },
       "yield": {
-        "earns_interest": false,
-        "apy": "无",
+        "earns_interest": true,
+        "apy": "最高约 18% APY (wallet yield)",
         "type": "无",
         "note": "卡片余额不产生利息"
       },
@@ -314,30 +316,33 @@
         ]
       },
       "sources": [
-        "https://defimap.io/cards/bitget-card"
+        "https://defimap.io/cards/bitget-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": true,
-        "detail": "⚠️ Bitget Wallet Card 官方FAQ明确将 'China'（中国）列为可用地区之一！是本次调查中唯一明确宣布支持中国大陆的交易所系U卡。适用地区包括：欧洲(EEA+UK)、拉美多国、APAC（新加坡、韩国、日本、越南、马来西亚、台湾、澳大利亚、泰国、菲律宾）以及中国。",
+        "detail": "Bitget Wallet Card 官方帮助页将 China 列为可用地区。支持身份证 + 护照 KYC，支持微信/支付宝绑定。",
         "documents": {
           "id_card": true,
           "passport": true,
-          "note": "官方明确列出China为可用国家，应支持中国护照/身份证KYC"
+          "note": "身份证 + 护照均可KYC"
         },
         "requires_overseas_address": false,
-        "address_note": "官方列出China为可用地区，应支持大陆地址",
+        "address_note": "不要求海外地址",
         "requires_overseas_phone": false,
-        "phone_note": "中国大陆手机号应可用（官方明确支持China地区）",
+        "phone_note": "不要求海外手机号",
         "china_ip_blocked": false,
-        "ip_note": "无大陆IP限制",
+        "ip_note": "无IP限制（申请时建议关闭VPN）",
         "application_threshold": {
           "staking_required": false,
           "monthly_fee": "$0",
-          "min_deposit": "无最低要求",
-          "physical_card": "目前仅APAC特定国家有实体卡（新加坡、韩国、日本、越南、马来西亚、台湾、澳大利亚、泰国、菲律宾）；中国暂未列入实体卡支持列表"
+          "min_deposit": "钱包内至少持有 $10 加密资产",
+          "physical_card": "大陆版本实体卡仍在开发中；当前以虚拟卡为主。"
         },
-        "notes": "💡 重大发现：这是目前少数官方明确宣布支持中国大陆的主流U卡。支持微信支付和支付宝绑定。月度0-fee配额内消费费用全免。虚拟卡立即可用。APIAC部分国家有实体卡。每日消费限额$12,000，年$150,000。 ⚠️ 2026-07-06实测：官网FAQ仍列出中国大陆为可用国家，但建议下载App实测确认当前KYC流程。",
+        "notes": "大陆用户首选推荐！身份证+护照均可KYC，不需要海外地址/手机号。支持微信/支付宝绑定。是目前大陆用户最友好的U卡。",
         "sources": [
+          "https://web3.bitget.com/helpCenter/235",
+          "https://www.bitget.com/support/articles/12560603840909",
           "https://web3.bitget.com/card",
           "https://defimap.io/cards/bitget-card"
         ]
@@ -391,7 +396,8 @@
         "https://aped.ai/reviews/backpack",
         "https://cryptoradar.com/exchanges/backpack",
         "https://backpack.app/",
-        "https://tradersunion.com/brokers/crypto/view/backpack/fees/"
+        "https://tradersunion.com/brokers/crypto/view/backpack/fees/",
+        "https://card.lengziyu.cn"
       ],
       "note": "⚠️ Backpack目前并未推出独立的U卡(加密货币消费卡)产品。其核心业务为交易所和钱包。如用户指的不是交易所而是其他Backpack品牌U卡，请提供更多信息。",
       "mainland_china": {
@@ -502,7 +508,8 @@
         ]
       },
       "sources": [
-        "https://www.cryptocardhub.com/card/binance-card"
+        "https://www.cryptocardhub.com/card/binance-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": false,
@@ -538,7 +545,7 @@
         "仅虚拟卡(无实体卡)"
       ],
       "cashback": {
-        "rate": "暂无公开返现",
+        "rate": "最高 2%",
         "note": "OKX Card目前定位为数字美元消费工具，未提供明确返现奖励"
       },
       "fees": {
@@ -546,7 +553,7 @@
         "annual_fee": "免费",
         "monthly_fee": "未公开",
         "crypto_conversion_fee": "无隐藏费用(官方宣称)",
-        "fx_fee": "无隐藏汇率加价(官方宣称)",
+        "fx_fee": "0%",
         "atm_fee": "不支持ATM(仅虚拟卡)",
         "inactivity_fee": "未公开",
         "top_up_fee": "免费(OKX Pay/银行转账)"
@@ -587,15 +594,16 @@
         ]
       },
       "sources": [
-        "https://defimap.io/cards/okx-card"
+        "https://defimap.io/cards/okx-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": false,
-        "detail": "OKX Card目前仅限美国市场。OKX主站不支持中国大陆用户注册和交易。大陆用户完全无法使用。",
+        "detail": "OKX Card 为美国市场产品，大陆用户无法直接申请。",
         "documents": {
           "id_card": false,
           "passport": false,
-          "note": "不支持——仅限美国"
+          "note": "不支持——美国市场产品"
         },
         "requires_overseas_address": null,
         "address_note": "不适用（仅美国可用）",
@@ -608,7 +616,7 @@
           "monthly_fee": "未公开",
           "note": "不适用于大陆用户"
         },
-        "notes": "⚠️ 完全不可用。OKX Card是纯美国产品，OKX主站本身也限制中国大陆用户。没有物理卡，没有返现。",
+        "notes": "大陆不可用。OKX Card 是纯美国产品，无物理卡。",
         "sources": [
           "https://defimap.io/cards/okx-card"
         ]
@@ -677,7 +685,8 @@
         ]
       },
       "sources": [
-        "https://defimap.io/cards/gate-card"
+        "https://defimap.io/cards/gate-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": false,
@@ -715,7 +724,7 @@
         "实体卡"
       ],
       "cashback": {
-        "rate": "2%-10% (USDT返现，按VIP等级/月消费额)",
+        "rate": "最高 2%",
         "tiers": {
           "tier_1_base": {
             "threshold": "无月消费门槛",
@@ -790,8 +799,8 @@
         "subscription_rebates": "Tier 2 Beta及以上: Netflix, Spotify, ChatGPT, TradingView, Amazon Prime 100%返现",
         "referral_bonus": "未提及",
         "mobile_wallets": [
-          "Google Pay(全球)",
-          "Apple Pay(按地区)"
+          "Apple Pay",
+          "Google Pay"
         ],
         "auto_savings": "闲置余额自动生息最高8% APY"
       },
@@ -810,11 +819,12 @@
       },
       "sources": [
         "https://www.cryptocardhub.com/card/bybit-card",
-        "https://defimap.io/cards/bybit-card"
+        "https://defimap.io/cards/bybit-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": false,
-        "detail": "Cryptocardhub数据显示China在 'Restricted Countries'（受限国家）列表中。Bybit官方不向中国大陆用户提供Card产品。虽Bybit在部分APAC国家有卡产品，但明确排除中国。即使使用VPN，KYC环节需要居住地址证明，中国大陆地址会被拒绝。",
+        "detail": "Bybit Card 覆盖 EEA、英国、部分拉美/亚太地区，但明确将中国大陆列为受限。",
         "documents": {
           "id_card": false,
           "passport": false,
@@ -831,7 +841,7 @@
           "monthly_fee": "免费",
           "note": "不适用于大陆用户"
         },
-        "notes": "⚠️ 不可用。Bybit Card在功能和福利上是最全面的交易所系U卡之一（10%返现、8%APY、订阅报销、机场贵宾厅），但对大陆用户封锁。",
+        "notes": "大陆不可用。虽然在功能和福利上是最全面的交易所系U卡之一（2%返现、贵宾厅、订阅报销），但对中国大陆完全封锁。",
         "sources": [
           "https://www.cryptocardhub.com/card/bybit-card",
           "https://defimap.io/cards/bybit-card"
@@ -936,15 +946,16 @@
         ]
       },
       "sources": [
-        "https://www.cryptocardhub.com/card/crypto-com-card"
+        "https://www.cryptocardhub.com/card/crypto-com-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": "partial",
-        "detail": "Crypto.com在全球多国提供服务，部分用户反馈可用中国护照KYC，但需要提供非中国大陆的居住地址。直接使用大陆地址注册大概率会被拒绝。不同地区的可用性和CRO质押要求不同。",
+        "detail": "中国护照可作为身份证明，但需要非中国大陆居住地址。地址决定发卡地区和功能。",
         "documents": {
           "id_card": false,
           "passport": true,
-          "note": "中国护照可以用于KYC，但需要配非大陆居住地址"
+          "note": "护照可KYC，但需要非大陆居住地址"
         },
         "requires_overseas_address": true,
         "address_note": "必须提供非中国大陆的居住地址。地址决定卡片的法币货币和可用功能。",
@@ -958,7 +969,7 @@
           "stake_amount": "最低$500 USD等值CRO（Ruby Steel等级），锁仓12个月",
           "note": "不同卡片等级对应不同CRO质押金额（$500-$500,000）"
         },
-        "notes": "需要至少$500 CRO质押（锁12个月）。返现以CRO代币支付。高级卡（Obsidian）提供无限贵宾厅、Netflix/Spotify报销等优质福利。对有海外地址的中国护照持有者来说可用，但对纯粹居住在中国大陆的用户门槛较高。",
+        "notes": "需要至少 $500 CRO 质押（锁12个月）。纯大陆地址门槛高。有海外地址的护照持有者可尝试。",
         "sources": [
           "https://www.cryptocardhub.com/card/crypto-com-card"
         ]
@@ -974,7 +985,7 @@
         "实体卡"
       ],
       "cashback": {
-        "rate": "无传统返现",
+        "rate": "无传统返现（通过推荐计划获取佣金）",
         "note": "无现金返现计划; 通过推荐计划和KOL合作项目提供佣金奖励; 偶尔有$5新用户促销"
       },
       "fees": {
@@ -983,7 +994,7 @@
         "monthly_fee": "免费",
         "replacement_fee": "虚拟卡: 首次$5, 后续$10",
         "crypto_conversion_fee": "1.0% (所有交易)",
-        "fx_fee": "1.20% (非基础货币交易)",
+        "fx_fee": "约 1-2%",
         "atm_fee": "2.0% (取现金额; 另加1%转换费和ATM运营商费)",
         "inactivity_fee": "$5/月 (12个月不活跃后)",
         "small_txn_fee": "前5笔≤$1免费/月, 之后$0.20/笔",
@@ -992,20 +1003,19 @@
         "top_up_fee": "免费(加密入金); Binance Pay免费即时转入"
       },
       "chinese_kyc": {
-        "allows_chinese": "partial",
+        "allows_chinese": false,
         "kyc_required": true,
         "supported_documents": "护照等身份证明",
-        "available_regions": [
-          "全球100+国家"
-        ],
+        "available_regions": [],
         "restricted_regions": [
+          "中国大陆",
           "古巴",
           "伊朗",
           "朝鲜",
           "俄罗斯",
           "委内瑞拉等制裁国家"
         ],
-        "note": "✅ 香港持牌平台，对中国护照用户较友好；全球可用性最广之一"
+        "note": "RedotPay 官方 Unsupported Countries/Regions 页面列出 Mainland China；中国大陆公民不能完成 KYC 或使用服务。"
       },
       "benefits": {
         "lounge_access": "不支持",
@@ -1014,12 +1024,12 @@
         "referral_bonus": "推荐佣金 + KOL/Affiliate合作计划",
         "mobile_wallets": [
           "Apple Pay",
-          "Google Pay",
-          "Samsung Pay"
+          "Google Pay"
         ],
         "paypal_integration": "可添加到PayPal作为支付方式(仅消费)",
         "credit_account": "质押加密资产获取信用额度",
-        "external_wallet": "MetaMask和WalletConnect直连消费"
+        "external_wallet": "MetaMask和WalletConnect直连消费",
+        "wechat_alipay": "有条件支持——官网新闻稿提到微信/支付宝支持，但以帮助中心实际开放为准"
       },
       "yield": {
         "earns_interest": false,
@@ -1047,20 +1057,21 @@
       },
       "sources": [
         "https://www.cryptocardhub.com/card/redotpay-card",
-        "https://defimap.io/cards/redotpay-card"
+        "https://defimap.io/cards/redotpay-card",
+        "https://card.lengziyu.cn"
       ],
       "mainland_china": {
         "available": "partial",
-        "detail": "中国大陆用户可用中国护照KYC，大概率不需要海外地址证明。RedotPay定位全球100+国家，香港持牌，对中国用户最友好。",
+        "detail": "香港背景，覆盖较广。对中国护照用户较友好，通常不强制海外地址。",
         "documents": {
           "id_card": false,
           "passport": true,
-          "note": "公开信息仅提及护照；大陆身份证是否直接支持需要实测确认"
+          "note": "护照可KYC；大陆身份证是否可直接通过仍需实测"
         },
         "requires_overseas_address": false,
-        "address_note": "未明确要求海外地址；可以尝试大陆地址",
+        "address_note": "通常不强制海外地址",
         "requires_overseas_phone": false,
-        "phone_note": "无明确海外手机号要求",
+        "phone_note": "通常不强制海外手机号",
         "china_ip_blocked": false,
         "ip_note": "无大陆IP限制",
         "application_threshold": {
@@ -1070,8 +1081,10 @@
           "virtual_card_fee": "$10（一次性）",
           "physical_card_fee": "$100（一次性）"
         },
-        "notes": "中国用户最主流的U卡选择之一。香港背景，对CN用户最大限制可能是部分服务（Netflix/Spotify等）被拒付。无返现但有高消费额度。",
+        "notes": "对中国护照用户较友好的选择。Apple Pay/Google Pay支持完善，微信/支付宝有限支持。",
         "sources": [
+          "https://helpcenter.redotpay.com/en/articles/10339263-unsupported-countries-regions",
+          "https://helpcenter.redotpay.com/en/articles/14255319-card-delivery-restrictions",
           "https://www.cryptocardhub.com/card/redotpay-card",
           "https://defimap.io/cards/redotpay-card",
           "https://www.redotpay.com/card"
@@ -1082,74 +1095,77 @@
   "summary_comparison": {
     "best_cashback": [
       {
+        "card": "EtherFi Cash",
+        "rate": "3% (Core) / 4% (VIP)",
+        "note": "VIP需邀请"
+      },
+      {
         "card": "Plasma One",
-        "rate": "3%基础 + AI订阅10%活动",
-        "note": "无消费门槛"
+        "rate": "最高 4%",
+        "note": "基础3% + AI订阅活动10%"
       },
       {
         "card": "Bybit Card",
-        "rate": "2%-10%",
-        "note": "需月消费达$25,000才有10%"
+        "rate": "最高 2%",
+        "note": "大陆不可用"
       },
       {
-        "card": "EtherFi Cash",
-        "rate": "3%-4%",
-        "note": "需VIP等级才有4%"
+        "card": "OKX Card",
+        "rate": "最高 2%",
+        "note": "仅美国"
       }
     ],
     "best_for_chinese_users": [
       {
+        "card": "Bitget Wallet Card",
+        "reason": "身份证+护照可KYC，无需海外地址/手机号，支持微信/支付宝"
+      },
+      {
         "card": "RedotPay",
-        "reason": "香港平台，对CN护照友好，100+国家可用"
+        "reason": "护照可KYC，无需海外地址/手机号，Apple Pay/Google Pay完善"
       },
       {
         "card": "Plasma One",
-        "reason": "直接支持中国护照/身份证KYC(需海外地址证明)"
-      },
-      {
-        "card": "Crypto.com",
-        "reason": "部分区域可接受中国护照"
+        "reason": "护照可KYC，3%基础返现+10%+余额生息（需海外地址+邀请码）"
       }
     ],
     "lowest_fees": [
       {
         "card": "Plasma One",
-        "reason": "直接用USDT消费无转换费"
+        "reason": "USDT直消费法币无转换费，FX最高1%"
       },
       {
         "card": "OKX Card",
-        "reason": "无隐藏费用(但仅限美国用户)",
-        "note": "CN用户无法使用"
+        "reason": "0% FX费",
+        "note": "仅美国"
+      },
+      {
+        "card": "EtherFi Cash",
+        "reason": "1% FX费"
       }
     ],
     "best_yield": [
       {
         "card": "Plasma One",
-        "apy": "10%+ 活期(USDT)"
+        "apy": "10%+ USDT活期"
+      },
+      {
+        "card": "Bitget Wallet Card",
+        "apy": "最高约18% APY"
       },
       {
         "card": "Bybit Card",
-        "apy": "最高8% APY (Auto-Savings)"
-      },
-      {
-        "card": "EtherFi Cash",
-        "apy": "最高8% APY (生态质押)"
-      }
-    ],
-    "most_benefits": [
-      {
-        "card": "Crypto.com Obsidian",
-        "reason": "无限贵宾厅、保险、Netflix+Spotify报销、旅行返现"
-      },
-      {
-        "card": "Bybit Card",
-        "reason": "250+贵宾厅、订阅100%返现、Auto-Savings"
+        "apy": "最高8% APY",
+        "note": "大陆不可用"
       }
     ],
     "cards_unavailable_to_chinese": [
       "Binance Card (仅拉美+亚美尼亚)",
       "OKX Card (仅美国)",
-      "Bybit Card (明确限制中国大陆)"
+      "Bybit Card (明确限制中国大陆)",
+      "EtherFi Cash (仅美国+香港)",
+      "Gate Card (美国银行发行，大陆不友好)",
+      "X Card (仅美国)"
     ]
   }
 }
