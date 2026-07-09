@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="936" height="500" viewBox="0 0 936 500" role="img" aria-label="钱包控制权机制图">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 10 6 2 10" fill="none" stroke="#002FA7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#17172A" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="936" height="500" rx="34" fill="#FEFCF6"/>
+  <g opacity="0.55"><circle cx="76" cy="74" r="18" fill="#FFD500"/><circle cx="852" cy="100" r="24" fill="#DCEEFE"/><circle cx="742" cy="414" r="18" fill="#FFE1E6"/></g>
+  <g filter="url(#softShadow)">
+    <path d="M74 386H862c35 0 55 18 46 42-8 24-42 38-78 38H108c-35 0-67-16-74-38-8-24 5-42 40-42Z" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+    <path d="M84 386h768" stroke="#17172A" stroke-width="2" opacity="0.18"/>
+    <rect x="88" y="398" width="22" height="22" rx="5" fill="#DCEEFE" stroke="#17172A" stroke-width="2"/>
+<rect x="422" y="408" width="22" height="22" rx="5" fill="#FFD500" stroke="#17172A" stroke-width="2"/>
+<rect x="684" y="398" width="22" height="22" rx="5" fill="#DCEEFE" stroke="#17172A" stroke-width="2"/>
+    <path d="M284 285 C 324 277, 314 293, 354 285" fill="none" stroke="#002FA7" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M582 285 C 622 277, 612 293, 652 285" fill="none" stroke="#002FA7" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <g transform="rotate(-1.2 170 278)">
+      <ellipse cx="186" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(118 184)"><rect x="12" y="26" width="104" height="68" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 36h76c13 0 22 10 22 22v28" fill="none" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="94" cy="60" r="9" fill="#FFD500" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 48h32" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 68h20" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="82" y="250" width="176" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="170" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#002FA7">助记词</text>
+    </g>
+<g transform="rotate(1.2 468 278)">
+      <ellipse cx="484" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(416 184)"><rect x="12" y="26" width="104" height="68" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 36h76c13 0 22 10 22 22v28" fill="none" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="94" cy="60" r="9" fill="#002FA7" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 48h32" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 68h20" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="380" y="250" width="176" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="468" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#002FA7">私钥</text>
+    </g>
+<g transform="rotate(-1.2 766 278)">
+      <ellipse cx="782" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(714 184)"><rect x="12" y="26" width="104" height="68" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 36h76c13 0 22 10 22 22v28" fill="none" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="94" cy="60" r="9" fill="#FFD500" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 48h32" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 68h20" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="678" y="250" width="176" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="766" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#002FA7">地址</text>
+    </g>
+  </g>
+</svg>

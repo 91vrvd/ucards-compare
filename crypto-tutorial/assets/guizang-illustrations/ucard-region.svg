@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="936" height="500" viewBox="0 0 936 500" role="img" aria-label="U 卡申请地区机制图">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 10 6 2 10" fill="none" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#17172A" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="936" height="500" rx="34" fill="#FEFCF6"/>
+  <g opacity="0.55"><circle cx="76" cy="74" r="18" fill="#FFD500"/><circle cx="852" cy="100" r="24" fill="#DCEEFE"/><circle cx="742" cy="414" r="18" fill="#FFE1E6"/></g>
+  <g filter="url(#softShadow)">
+    <path d="M74 386H862c35 0 55 18 46 42-8 24-42 38-78 38H108c-35 0-67-16-74-38-8-24 5-42 40-42Z" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+    <path d="M84 386h768" stroke="#17172A" stroke-width="2" opacity="0.18"/>
+    <rect x="50" y="398" width="22" height="22" rx="5" fill="#DCEEFE" stroke="#17172A" stroke-width="2"/>
+<rect x="310" y="408" width="22" height="22" rx="5" fill="#FFD500" stroke="#17172A" stroke-width="2"/>
+<rect x="498" y="398" width="22" height="22" rx="5" fill="#DCEEFE" stroke="#17172A" stroke-width="2"/>
+<rect x="758" y="408" width="22" height="22" rx="5" fill="#FFD500" stroke="#17172A" stroke-width="2"/>
+    <path d="M233 285 C 273 277, 215 293, 255 285" fill="none" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M457 285 C 497 277, 439 293, 479 285" fill="none" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M681 285 C 721 277, 663 293, 703 285" fill="none" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <g transform="rotate(-1.2 132 278)">
+      <ellipse cx="148" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(78 190)"><rect x="10" y="26" width="118" height="74" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 48h118" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="68" width="28" height="14" rx="4" fill="#FFD500" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="76" r="10" fill="#dceefe" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="57" y="250" width="150" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="132" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#FF6B35">地区</text>
+    </g>
+<g transform="rotate(1.2 356 278)">
+      <ellipse cx="372" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(302 190)"><rect x="10" y="26" width="118" height="74" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 48h118" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="68" width="28" height="14" rx="4" fill="#FF6B35" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="76" r="10" fill="#dceefe" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="281" y="250" width="150" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="356" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#FF6B35">材料</text>
+    </g>
+<g transform="rotate(-1.2 580 278)">
+      <ellipse cx="596" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(526 190)"><rect x="10" y="26" width="118" height="74" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 48h118" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="68" width="28" height="14" rx="4" fill="#FFD500" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="76" r="10" fill="#dceefe" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="505" y="250" width="150" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="580" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#FF6B35">申请</text>
+    </g>
+<g transform="rotate(1.2 804 278)">
+      <ellipse cx="820" cy="370" rx="78" ry="13" fill="#17172A" opacity="0.10"/>
+      <g transform="translate(750 190)"><rect x="10" y="26" width="118" height="74" rx="18" fill="#f7f7f2" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 48h118" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="28" y="68" width="28" height="14" rx="4" fill="#FF6B35" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="76" r="10" fill="#dceefe" stroke="#17172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="729" y="250" width="150" height="72" rx="24" fill="#FFFFFF" stroke="#17172A" stroke-width="3"/>
+      <text x="804" y="295" text-anchor="middle" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="900" fill="#FF6B35">小额测试</text>
+    </g>
+  </g>
+</svg>
