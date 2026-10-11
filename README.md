@@ -1,10 +1,12 @@
-# 💳 U 卡对比百科 (Crypto Card Compare)
+# U 卡对比百科 / Crypto Card Compare
 
 [![GitHub Pages](https://img.shields.io/badge/部署-GitHub%20Pages-blue?logo=github)](https://91vrvd.github.io/ucards-compare/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/91vrvd/ucards-compare/pulls)
 
-> 一站式加密货币消费卡（U 卡）对比平台 —— 返现 · 手续费 · 大陆可用性 · KYC · 权益 · 余额生息，全部统一整理。
+把常见加密货币消费卡放在一张表里，方便查看返现、手续费、申请条件和地区限制。卡片资料会变化，申请前请再核对发行方官网。
+
+**English:** Compare crypto payment cards by cashback, fees, eligibility, KYC, and regional limits. Check the issuer's current terms before applying.
 
 📡 **在线访问**：[https://91vrvd.github.io/ucards-compare/](https://91vrvd.github.io/ucards-compare/)
 
