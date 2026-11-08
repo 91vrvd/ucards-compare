@@ -14,6 +14,17 @@ function normalizeKYC(c: any): { allows_chinese: any; kyc_required: boolean; sup
   };
 }
 
+// 数据里有 6 张卡的 funding.crypto 写成了字符串，详情页对它调用 .join() 会整页白屏；这里统一成数组。
+function normalizeFunding(f: any): { crypto: string[]; fiat: string; networks: string[]; additional?: string } {
+  const toList = (v: any): string[] => (Array.isArray(v) ? v : v ? [String(v)] : []);
+  return {
+    crypto: toList(f?.crypto),
+    fiat: f?.fiat || '',
+    networks: toList(f?.networks),
+    ...(f?.additional ? { additional: f.additional } : {}),
+  };
+}
+
 export const cards: UCard[] = (rawData as any).cards
   ? Object.entries((rawData as any).cards).map(([slug, data]: [string, any]) => ({
       slug,
@@ -27,7 +38,7 @@ export const cards: UCard[] = (rawData as any).cards
       chinese_kyc: normalizeKYC(data),
       benefits: data.benefits || {},
       yield: data.yield || { earns_interest: false, apy: '', type: '', note: '' },
-      funding: data.funding || { crypto: [], fiat: '', networks: [] },
+      funding: normalizeFunding(data.funding),
       sources: data.sources || [],
       note: data.note || '',
       mainland_china: data.mainland_china || undefined,
